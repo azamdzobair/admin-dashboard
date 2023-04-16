@@ -20,6 +20,7 @@ import Products from './Components/Products';
 
 
 
+
 const App = () => {
   const router = createBrowserRouter([
     { path: '/', element: <Main></Main> },
@@ -29,6 +30,7 @@ const App = () => {
     { path: 'dashboard', element: <Dashboard></Dashboard> },
     { path: 'buy', element: <Buy></Buy> },
     { path: 'user', element: <User></User> },
+
     { path: 'products', element: <Products></Products> }
 
 
