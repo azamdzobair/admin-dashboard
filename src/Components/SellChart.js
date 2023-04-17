@@ -55,8 +55,8 @@ const SellChart = () => {
     ];
 
     return (
-        <div>
-            <LineChart width={600} height={400} data={data} margin={{
+        <div className='flex justify-center mt-20'>
+            <LineChart width={700} height={400} data={data} margin={{
                 top: 50,
 
                 left: 100,

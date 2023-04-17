@@ -2,36 +2,30 @@ import React from 'react';
 
 const Featured = () => {
     return (
-        <div className="featured">
-            <div className="featuredItem">
-                <span className="featuredTitle">Revanue</span>
+        <div className="flex justify-around mt-20">
+            <div className="bg-green-400 px-10 py-10 rounded-3xl shadow-2xl">
+                <span className="text-4xl font-extrabold">Revanue</span>
                 <div className="featuredMoneyContainer">
-                    <span className="featuredMoney">$2,415</span>
-                    <span className="featuredMoneyRate">
-                        -11.4
-                    </span>
+                    <span className="text-2xl">$2,415</span>
+
                 </div>
-                <span className="featuredSub">Compared to last month</span>
+                <span className="text-lg">Compared to last month</span>
             </div>
-            <div className="featuredItem">
-                <span className="featuredTitle">Sales</span>
+            <div className="bg-green-500 px-10 py-10 rounded-3xl shadow-2xl">
+                <span className="text-4xl font-extrabold">Sale</span>
                 <div className="featuredMoneyContainer">
-                    <span className="featuredMoney">$4,415</span>
-                    <span className="featuredMoneyRate">
-                        -1.4
-                    </span>
+                    <span className="text-2xl">$9,415</span>
+
                 </div>
-                <span className="featuredSub">Compared to last month</span>
+                <span className="text-lg">Compared to last month</span>
             </div>
-            <div className="featuredItem">
-                <span className="featuredTitle">Cost</span>
+            <div className="bg-green-600 px-10 py-10 rounded-3xl shadow-2xl">
+                <span className="text-4xl font-extrabold">Cost</span>
                 <div className="featuredMoneyContainer">
-                    <span className="featuredMoney">$2,225</span>
-                    <span className="featuredMoneyRate">
-                        +2.4
-                    </span>
+                    <span className="text-2xl">$4,415</span>
+
                 </div>
-                <span className="featuredSub">Compared to last month</span>
+                <span className="text-lg">Compared to last month</span>
             </div>
         </div>
     );

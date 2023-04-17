@@ -1,20 +1,9 @@
-
-
-
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import './App.css'
-
 
 import Main from './Main';
-
-
-
 import Dashboard from './Components/Dashboard';
-
-
 import Products from './Components/Products';
 import Users from './Components/Users';
-
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -29,32 +18,18 @@ const App = () => {
           },
           element: <Users></Users>
         },
-        { path: 'products', element: <Products></Products> }
+        { path: 'products', element: <Products></Products> },
+
 
       ]
     },
-
-
-
-
-
-
-
-
-
 
   ]);
 
   return (
 
-    <div className='App'>
-
-
-
-
+    <div className=''>
       <RouterProvider router={router}></RouterProvider>
-
-
     </div>
   )
 }

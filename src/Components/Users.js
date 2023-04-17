@@ -7,12 +7,20 @@ const Users = () => {
     const users = useLoaderData();
     return (
         <div>
-            {
-                users.map(user =>
-                    <User user={user} key={user.id} ></User>
-                )
+            <h1 className='flex justify-center text-4xl font-extrabold mt-20'>Our User</h1>
 
-            }
+            <div className='flex justify-center'>
+
+
+                <div className=' grid grid-cols-3 gap-8'>
+                    {
+                        users.map(user =>
+                            <User user={user} key={user.id} ></User>
+                        )
+
+                    }
+                </div>
+            </div>
         </div>
     );
 };

@@ -3,16 +3,16 @@ import React from 'react';
 import Featured from './Featured';
 
 import SellChart from './SellChart';
-import AdminUser from './AdminUser';
+
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className=' mt-20'>
 
-            <h1>We are here</h1>
+            <h1 className='flex justify-center text-4xl font-extrabold'>Our Dashboard</h1>
             <Featured></Featured>
             <SellChart></SellChart>
-            <AdminUser></AdminUser>
+
 
         </div>
     );

@@ -46,18 +46,17 @@ const Products = () => {
     }
 
     return (
-        <div className='App'>
+        <div>
+            <div>
 
-
-
-
-            <Shop size={cart.length} setShow={setShow} ></Shop>
-            {
-                show ? <Productlist handleClick={handleClick} ></Productlist> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} ></Cart>
-            }
-            {
-                warning && <div className='warning'>Item is already added to your cart</div>
-            }
+                <Shop size={cart.length} setShow={setShow} ></Shop>
+                {
+                    show ? <Productlist handleClick={handleClick} ></Productlist> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} ></Cart>
+                }
+                {
+                    warning && <div>Item is already added to your cart</div>
+                }
+            </div>
         </div>
     )
 }

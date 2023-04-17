@@ -1,16 +1,16 @@
 import React from 'react';
 
 const Cards = ({ item, handleClick }) => {
-    const { title, author, price, img } = item;
+    const { name, seller, price, img } = item;
     return (
-        <div className="cards">
-            <div className="image_box">
-                <img src={img} alt="Image" />
+        <div className="">
+            <div className="w-64">
+                <img src={img} alt="Img" />
             </div>
-            <div className="details">
-                <p>{title}</p>
-                <p>{author}</p>
-                <p>Price - {price}Rs</p>
+            <div className="mt-8">
+                <p>{name}</p>
+                <p>{seller}</p>
+                <p>Price - {price}$</p>
                 <button onClick={() => handleClick(item)} >Add to Cart</button>
             </div>
         </div>

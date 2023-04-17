@@ -4,17 +4,21 @@ import React from 'react';
 
 const Shop = ({ size, setShow }) => {
     return (
-        <div className="nav_box">
+        <div className='flex justify-around py-2 bg-amber-400 h-10 '>
 
-            <span className="my_shop" onClick={() => setShow(true)}>
-                Shopping
-            </span>
-            <div className="cart" onClick={() => setShow(false)}>
+
+            <div onClick={() => setShow(true)}>
+                <span>
+                    Shopping
+                </span>
+            </div>
+            <div onClick={() => setShow(false)}>
                 <span>
                     Cart
                 </span>
                 <sup>{size}</sup>
             </div>
+
         </div>
 
 
