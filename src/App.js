@@ -10,28 +10,32 @@ import Main from './Main';
 
 
 import Dashboard from './Components/Dashboard';
-import Buy from './Components/Buy';
-import User from './Components/User';
+
+
 import Products from './Components/Products';
-
-
-
-
-
-
-
+import Users from './Components/Users';
 
 const App = () => {
   const router = createBrowserRouter([
-    { path: '/', element: <Main></Main> },
+    {
+      path: '/', element: <Main></Main>,
+      children: [
+        { path: 'dashboard', element: <Dashboard></Dashboard> },
+
+        {
+          path: 'users',
+          loader: async () => {
+            return fetch('https://jsonplaceholder.typicode.com/users')
+          },
+          element: <Users></Users>
+        },
+        { path: 'products', element: <Products></Products> }
+
+      ]
+    },
 
 
 
-    { path: 'dashboard', element: <Dashboard></Dashboard> },
-    { path: 'buy', element: <Buy></Buy> },
-    { path: 'user', element: <User></User> },
-
-    { path: 'products', element: <Products></Products> }
 
 
 

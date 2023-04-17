@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Cart from './Cart';
 import Shop from './Shop';
 
-import Sidebar from './Sidebar';
+
 import Productlist from './Productlist';
 
 
@@ -48,7 +48,7 @@ const Products = () => {
     return (
         <div className='App'>
 
-            <Sidebar></Sidebar>
+
 
 
             <Shop size={cart.length} setShow={setShow} ></Shop>
